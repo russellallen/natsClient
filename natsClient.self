@@ -83,6 +83,44 @@ SlotsToOmit: directory fileInTimeString myComment postFileIn revision subpartNam
             | ) .
         } | ) 
 
+ bootstrap addSlotsTo: bootstrap stub -> 'globals' -> 'natsClient' -> () From: ( | {
+         'Category: settings\x7fModuleInfo: Module: natsClient InitialContents: InitializeToExpression: (\'localhost\')'
+        
+         host <- 'localhost'.
+        } | ) 
+
+ bootstrap addSlotsTo: bootstrap stub -> 'globals' -> 'natsClient' -> () From: ( | {
+         'Category: opening\x7fModuleInfo: Module: natsClient InitialContents: FollowSlot'
+        
+         isOpen = ( |
+            | notYetImplmented).
+        } | ) 
+
+ bootstrap addSlotsTo: bootstrap stub -> 'globals' -> 'natsClient' -> () From: ( | {
+         'Category: opening\x7fModuleInfo: Module: natsClient InitialContents: FollowSlot'
+        
+         open = ( |
+            | notYetImplemented).
+        } | ) 
+
+ bootstrap addSlotsTo: bootstrap stub -> 'globals' -> 'natsClient' -> () From: ( | {
+         'ModuleInfo: Module: natsClient InitialContents: FollowSlot'
+        
+         parent* = bootstrap stub -> 'traits' -> 'clonable' -> ().
+        } | ) 
+
+ bootstrap addSlotsTo: bootstrap stub -> 'globals' -> 'natsClient' -> () From: ( | {
+         'Category: settings\x7fModuleInfo: Module: natsClient InitialContents: InitializeToExpression: (4222)'
+        
+         port <- 4222.
+        } | ) 
+
+ bootstrap addSlotsTo: bootstrap stub -> 'globals' -> 'natsClient' -> () From: ( | {
+         'Category: private\x7fModuleInfo: Module: natsClient InitialContents: InitializeToExpression: (os_file deadCopy)'
+        
+         socketToServer <- os_file deadCopy.
+        } | ) 
+
 
 
  '-- Side effects'
